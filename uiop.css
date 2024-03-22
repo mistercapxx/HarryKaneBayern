@@ -1,0 +1,317 @@
+@font-face {
+    font-family: 'Nakadaitalic';
+    src: url('fonts/NakadaiItalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Facon';
+    src: url('fonts/Facon.ttf') format('truetype');
+
+}
+@font-face {
+    font-family: 'Indico';
+    src: url('fonts/Indico.otf') format('truetype');
+
+}
+@font-face {
+    font-family: 'Snowstorm';
+    src: url('fonts/Snowstorm.otf') format('truetype');
+
+}
+@font-face {
+    font-family: 'Grafmassa';
+    src: url('fonts/Grafmassa-Regular.ttf') format('truetype');
+
+}
+@font-face {
+    font-family: 'Socium Free';
+    src: url('fonts/SociumFree-Regular.otf') format('truetype');
+
+}
+@font-face {
+    font-family: 'Norgate Italic';
+    src: url('fonts/norgate-2.ttf') format('truetype');
+
+}
+@font-face {
+    font-family: 'Font Fiction';
+    src: url('fonts/font fiction.otf') format('truetype');
+
+}
+@font-face {
+    font-family: 'Geson Bamer';
+    src: url('fonts/GesonBamerDemo.ttf') format('truetype');
+
+}
+@font-face {
+    font-family: 'Gunterz Medium';
+    src: url('fonts/Gunterz-Medium.otf') format('truetype');
+
+}
+@font-face {
+    font-family: 'Shinners Regular';
+    src: url('fonts/shinners-regular.ttf') format('truetype');
+
+}
+body {
+    position: relative;
+    background-image: url('og-default.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+
+header {
+    background-color: #000741;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+
+.header-left {
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 100px;
+    display: inline-block;
+    z-index: 999;
+}
+.uefa
+{
+    margin-left: 50px;
+}
+
+.header-center ul {
+    list-style-type: none;
+    text-align: center;
+    font-size: 28px;
+    margin: auto;
+}
+
+.header-center ul li {
+    display: inline;
+    margin-right: 20px;
+    border: 2px solid yellow;
+    border-radius: 20px;
+    padding: 5px 6px;
+}
+
+.header-center ul li:last-child {
+    margin-right: 0;
+}
+
+.header-center ul li a {
+    color: #fff;
+    text-decoration: none;
+    background-color: black;
+    padding: 5px 35px;
+    border-radius: 20px;
+    display: inline-block;
+}
+.header-right
+{
+    display: flex;
+    align-items: center;
+}
+.btn-container {
+    display: flex;
+    align-items: center;
+}
+.btn-container, .btn {
+    margin: 0;
+}
+
+.header-right .btn {
+    background-color: yellow;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 23px;
+    font-weight: bold;
+}
+.icon-before-btn {
+    width: 32px;
+    height: 35px;
+    margin-right: 20px;
+}
+
+.btn
+{
+    margin-right: 20px;
+}
+
+main {
+    padding: 50px;
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+
+.section-gray {
+
+    height: 800px;
+}
+#chinazes
+{
+    margin-top: 10%;
+    font-size: 50px;
+    text-align: center;
+}
+#chinazes1
+{
+    font-family: Grafmassa;
+    font-size: 50px;
+    text-align: center;
+}
+
+#chinazes span {
+    display: block;
+    font-family: 'Shinners Regular', sans-serif;
+    font-weight: normal;
+    font-style: italic;
+}
+.section-white {
+    margin-top: 30%;
+    text-align: center;
+    position: relative;
+    padding: 100px 0;
+    z-index: 2;
+}
+
+
+.section-gray h2 {
+    font-size: 100px;
+    font-family: 'Grafmassa', sans-serif;
+    color: yellow;
+    max-width: 50%;
+}
+
+.section-gray p {
+
+    font-family: 'Indico', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 80px;
+    z-index: 1;
+    max-width: 60%;
+
+}
+.section-gray .text-center
+{
+    margin-left: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+
+.section-gray a.btn-yellow {
+
+    margin-left: 450px;
+    font-weight: bold;
+}
+
+.section-gray::after {
+    content: "";
+    background-image: url('harry-kane-74.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+}
+.section-white h2
+{
+    font-size: 80px;
+    font-family: "Rubik Vinyl", system-ui;
+        font-weight: 400;
+        font-style: normal;
+
+}
+
+.section-white p
+{
+    font-size: 36px;
+
+}
+
+.btn-yellow {
+    background-color: yellow;
+    color: #333;
+    font-size: 30px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.btn-yellow:hover {
+    background-color: #ff0;
+}
+
+.ball-container {
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4));
+    padding: 20px;
+
+}
+.ball-wrapper {
+    margin: 20px;
+    text-align: center;
+    flex-basis: calc(33.33% - 40px);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ball {
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.ball-caption {
+    font-size: 18px;
+    margin-top: 10px;
+    font-weight: bold;
+
+}
+
+@media screen and (max-width: 800px) {
+
+    .section-gray::after
+    {
+        background-image: none;
+    }
+
+
+
+}
