@@ -145,6 +145,8 @@ main {
     font-family: 'Grafmassa', sans-serif;
     color: yellow;
     max-width: 50%;
+    z-index: 999;
+
 }
 .section-gray p {
 
@@ -184,13 +186,14 @@ main {
 .section-gray::after {
     content: "";
     background-image: url('harry-kane-74.png');
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     width: 50%;
+    height: 100%;
 }
 .section-white {
     margin-top: 30%;
