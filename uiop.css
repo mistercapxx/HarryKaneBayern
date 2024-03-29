@@ -213,6 +213,10 @@ main {
     font-size: 36px;
 
 }
+.section-white .text-center
+{
+    margin-top: 50%;
+}
 .ball-container {
     margin-top: 100px;
     display: flex;
