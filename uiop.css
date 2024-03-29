@@ -1,65 +1,23 @@
-@font-face {
-    font-family: 'Nakadaitalic';
-    src: url('fonts/NakadaiItalic.otf') format('opentype');
-    font-weight: normal;
-    font-style: italic;
-}
-@font-face {
-    font-family: 'Facon';
-    src: url('fonts/Facon.ttf') format('truetype');
 
-}
 @font-face {
     font-family: 'Indico';
     src: url('fonts/Indico.otf') format('truetype');
 
 }
-@font-face {
-    font-family: 'Snowstorm';
-    src: url('fonts/Snowstorm.otf') format('truetype');
 
-}
 @font-face {
     font-family: 'Grafmassa';
     src: url('fonts/Grafmassa-Regular.ttf') format('truetype');
 
 }
-@font-face {
-    font-family: 'Socium Free';
-    src: url('fonts/SociumFree-Regular.otf') format('truetype');
 
-}
-@font-face {
-    font-family: 'Norgate Italic';
-    src: url('fonts/norgate-2.ttf') format('truetype');
-
-}
-@font-face {
-    font-family: 'Font Fiction';
-    src: url('fonts/font fiction.otf') format('truetype');
-
-}
-@font-face {
-    font-family: 'Geson Bamer';
-    src: url('fonts/GesonBamerDemo.ttf') format('truetype');
-
-}
-@font-face {
-    font-family: 'Gunterz Medium';
-    src: url('fonts/Gunterz-Medium.otf') format('truetype');
-
-}
-@font-face {
-    font-family: 'Shinners Regular';
-    src: url('fonts/shinners-regular.ttf') format('truetype');
-
-}
 body {
     position: relative;
     background-image: url('og-default.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    margin: 0 auto;
 }
 
 body::before {
@@ -82,6 +40,14 @@ header {
     padding: 20px;
     position: relative;
     z-index: 1;
+    width: 100%;
+}
+
+main {
+    padding: 50px;
+    color: white;
+    position: relative;
+    z-index: 1;
 }
 
 
@@ -94,10 +60,12 @@ header {
     display: inline-block;
     z-index: 999;
 }
+
 .uefa
 {
     margin-left: 50px;
 }
+
 
 .header-center ul {
     list-style-type: none;
@@ -121,24 +89,16 @@ header {
 .header-center ul li a {
     color: #fff;
     text-decoration: none;
-    background-color: black;
     padding: 5px 35px;
     border-radius: 20px;
     display: inline-block;
 }
+
 .header-right
 {
     display: flex;
     align-items: center;
 }
-.btn-container {
-    display: flex;
-    align-items: center;
-}
-.btn-container, .btn {
-    margin: 0;
-}
-
 .header-right .btn {
     background-color: yellow;
     color: #333;
@@ -148,6 +108,15 @@ header {
     font-size: 23px;
     font-weight: bold;
 }
+
+.btn-container {
+    display: flex;
+    align-items: center;
+}
+.btn-container, .btn {
+    margin: 0;
+}
+
 .icon-before-btn {
     width: 32px;
     height: 35px;
@@ -159,16 +128,33 @@ header {
     margin-right: 20px;
 }
 
-main {
-    padding: 50px;
-    color: white;
-    position: relative;
-    z-index: 1;
-}
-
 .section-gray {
 
     height: 800px;
+}
+.section-gray .text-center
+{
+    margin-left: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+.section-gray h2 {
+    font-size: 100px;
+    font-family: 'Grafmassa', sans-serif;
+    color: yellow;
+    max-width: 50%;
+}
+.section-gray p {
+
+    font-family: 'Indico', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 80px;
+    z-index: 1;
+    max-width: 60%;
+
 }
 #chinazes
 {
@@ -182,55 +168,19 @@ main {
     font-size: 50px;
     text-align: center;
 }
-
-#chinazes span {
-    display: block;
-    font-family: 'Shinners Regular', sans-serif;
-    font-weight: normal;
-    font-style: italic;
-}
-.section-white {
-    margin-top: 30%;
-    text-align: center;
-    position: relative;
-    padding: 100px 0;
-    z-index: 2;
-}
-
-
-.section-gray h2 {
-    font-size: 100px;
-    font-family: 'Grafmassa', sans-serif;
-    color: yellow;
-    max-width: 50%;
-}
-
-.section-gray p {
-
-    font-family: 'Indico', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 80px;
-    z-index: 1;
-    max-width: 60%;
-
-}
-.section-gray .text-center
-{
-    margin-left: 90px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    text-align: left;
-}
-
-
 .section-gray a.btn-yellow {
 
     margin-left: 450px;
     font-weight: bold;
 }
-
+.btn-yellow {
+    background-color: yellow;
+    color: #333;
+    font-size: 30px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+}
 .section-gray::after {
     content: "";
     background-image: url('harry-kane-74.png');
@@ -242,12 +192,19 @@ main {
     bottom: 0;
     width: 50%;
 }
+.section-white {
+    margin-top: 30%;
+    text-align: center;
+    position: relative;
+    padding: 100px 0;
+    z-index: 2;
+}
 .section-white h2
 {
     font-size: 80px;
     font-family: "Rubik Vinyl", system-ui;
-        font-weight: 400;
-        font-style: normal;
+    font-weight: 400;
+    font-style: normal;
 
 }
 
@@ -256,20 +213,6 @@ main {
     font-size: 36px;
 
 }
-
-.btn-yellow {
-    background-color: yellow;
-    color: #333;
-    font-size: 30px;
-    padding: 10px 20px;
-    border-radius: 20px;
-    text-decoration: none;
-}
-
-.btn-yellow:hover {
-    background-color: #ff0;
-}
-
 .ball-container {
     margin-top: 100px;
     display: flex;
@@ -304,14 +247,98 @@ main {
     font-weight: bold;
 
 }
+@media only screen and (max-width: 1000px) {
 
-@media screen and (max-width: 800px) {
-
-    .section-gray::after
+header
+{
+    z-index: 2;
+    margin-right: 20px;
+}
+    .header-left {
+        display: none;
+    }
+    .header-right
     {
-        background-image: none;
+        margin-right: 150px;
+    }
+
+    .header-center nav ul {
+        margin-left: 80px;
+        display: flex;
+        flex-wrap: wrap;
+
+
+    }
+    .header-center nav li {
+        width: 50%;
+    }
+
+    .icon-before-btn {
+        width: 70px;
+        height: 70px;
+        margin-right: 90px;
+
+    }
+    .btn
+    {
+        text-align: center;
+
+    }
+    .section-gray {
+        position: relative;
+        z-index: 1;
+    }
+    .section-gray h2
+    {
+        font-size: 350%;
+        z-index: 999;
+        margin-bottom: 20px;
+    }
+    .section-gray p
+    {
+        font-size: 250%;
+    }
+
+    #chinazes
+    {
+        font-size: 200%;
+    }
+    #chinazes1
+    {
+        margin-top: 12%;
+       margin-left: 15%;
+    }
+    .section-gray a.btn-yellow {
+
+        margin: 0 auto ;
+    }
+
+    .section-gray::after {
+        content: "";
+        background-repeat: no-repeat;
+        z-index: 0;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 40%;
+        height: 100%;
+    }
+    .section-white .text-center
+    {
+        font-size: 20px;
+    }
+    body::before
+    {
+width: 100%;
+        margin-left: 20px;
+    }
+    main
+    {
+        margin-left: 20px;
     }
 
 
-
 }
+
+
+
